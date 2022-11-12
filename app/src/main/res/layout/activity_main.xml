@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="365dp"
+        android:layout_height="408dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/pantalla"
+            android:layout_width="wrap_content"
+            android:layout_height="355dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btngrabar"
+        android:layout_width="152dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/video" />
+
+    <ImageView
+        android:id="@+id/btnguardar"
+        android:layout_width="153dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btngrabar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/galeria" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
